@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(-45deg, #bbb2b2, #bbb2b2);
 }
 
 .pokedex {
@@ -18,4 +20,17 @@ body {
   flex-wrap: wrap;
   margin: 0 10px;
   max-width: 100%;
+}
+
+#title {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fb6c54;
+  color: #433b3b;
+  border-bottom: 2px solid #fff;
+  top: 0;
+  left: 0;
 }
