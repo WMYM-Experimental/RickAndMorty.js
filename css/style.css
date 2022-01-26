@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f1f1f1;
 }
 .container {
   width: 100vw;
@@ -34,3 +36,15 @@
 /* ---------------------------CHARACTER INFO--------------------------- */
 
 /* ---------------------------FOOTER--------------------------- */
+.contact {
+  width: 100vw;
+  height: 40px;
+  background-color: #060907;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact a span {
+  color: #139b42;
+  font-weight: 700;
+}

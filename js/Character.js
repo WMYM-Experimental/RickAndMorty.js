@@ -7,18 +7,19 @@ const characterInfoContainer = document.getElementById(
 );
 
 const infoTemplate = `
-    <div id="character-name" class="character-name">
-        <h2 class="name">
-        </h2>
-    </div>
+<div id="character-name" class="character-name">
+    <h2 class="name">
+    Rick And Morty
+    </h2>
+</div>
 
-    <div id="character-about" class="character-about">
-    </div>
+<div id="character-about" class="character-about">
+</div>
 `;
 
 class Character {
   render() {
-    characterInfoContainer.appendChild(infoTemplate);
+    characterInfoContainer.innerHTML = infoTemplate;
   }
 }
 
