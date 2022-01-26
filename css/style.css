@@ -38,8 +38,11 @@ body {
 }
 
 /* ---------------------------CHARACTER INFO--------------------------- */
-#character-container {
-  height: calc(100vh - 100px);
+.main-page {
+  height: calc(100vh - 120px);
+}
+.display {
+  margin: 20px;
 }
 /* ---------------------------FOOTER--------------------------- */
 .contact {

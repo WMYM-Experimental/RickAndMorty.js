@@ -1,6 +1,6 @@
-const RICK_API_URL = `https://rickandmortyapi.com/api/character/`;
+// const RICK_API_URL = `https://rickandmortyapi.com/api/character/`;
 
-class API {
+class Api {
   async getCharacter(currentCharacterId) {
     // use id for take character info from the api
     const response = await fetch(
@@ -13,4 +13,4 @@ class API {
   }
 }
 
-export { API, RICK_API_URL };
+export { Api };

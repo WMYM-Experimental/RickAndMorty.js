@@ -1,10 +1,10 @@
-import { API, RICK_API_URL } from "./Api.js";
+import { Api } from "./Api.js";
 import { Character } from "./Character.js";
 
 const previousBtn = document.getElementById("previous-btn");
 const nextBtn = document.getElementById("next-btn");
 
-const api = new API();
+const api = new Api();
 let currentCharacterId = 1;
 
 function validStep(currentCharacterId) {
@@ -23,12 +23,12 @@ async function init(currentCharacterId) {
 }
 
 nextBtn.addEventListener("click", async () => {
-  currentCharacterId = currentCharacterId + 1;
+  currentCharacterId += 1;
   init(currentCharacterId);
 });
 
 previousBtn.addEventListener("click", async () => {
-  currentCharacterId = currentCharacterId - 1;
+  currentCharacterId -= 1;
   init(currentCharacterId);
 });
 
