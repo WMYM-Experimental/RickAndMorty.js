@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #139b42;
+  background-color: #9fcb41;
+  background-color: #047a85;
+}
+
+/* ---------------------------HEADER--------------------------- */
+.header {
+  width: 100vw;
+  height: 100px;
+  background-color: #060907;
+  display: flex;
+}
+.header .logo-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logo {
+  width: 300px;
+  height: 100px;
+}
+
+/* ---------------------------CHARACTER INFO--------------------------- */
+
+/* ---------------------------FOOTER--------------------------- */
