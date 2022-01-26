@@ -1,12 +1,13 @@
 const characterContainer = document.getElementById("character-container");
 class Character {
   // use destructuring for take the params from the json
-  constructor({ image, name, status, gender, species }) {
+  constructor({ image, name, status, gender, species, location }) {
     this.image = image;
     this.name = name;
     this.status = status;
     this.gender = gender;
     this.species = species;
+    this.location = location;
     this.render();
   }
 
@@ -26,13 +27,10 @@ class Character {
 
         <div id="character-about" class="character-about">
             <h3 class="character-fact"> Status: ${this.status}</h3>
+            <h3 class="character-fact"> Location: ${this.location.name}</h3>
             <h3 class="character-fact"> Gender: ${this.gender}</h3>
             <h3 class="character-fact"> Spicie: ${this.species}</h3>
         </div>
-
-        <button class="next-btn">
-            Next
-        </button>
     </div>
     `;
     return characterTemplate;
