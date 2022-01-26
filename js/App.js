@@ -2,7 +2,7 @@ import { API, RICK_API_URL } from "./Api.js";
 import { Character } from "./Character.js";
 
 const api = new API();
-let currentCaracter = 1;
+let currentCharacterId = 1;
 
 async function init(initId) {
   const characterData = await api.getCharacter(initId);
@@ -10,4 +10,4 @@ async function init(initId) {
   return char;
 }
 
-init(currentCaracter);
+init(currentCharacterId);

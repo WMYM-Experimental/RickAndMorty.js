@@ -1,6 +1,6 @@
 const characterContainer = document.getElementById("character-container");
 class Character {
-  // use destructuring
+  // use destructuring for take the params from the json
   constructor({ image, name, status, gender, species }) {
     this.image = image;
     this.name = name;
@@ -9,6 +9,8 @@ class Character {
     this.species = species;
     this.render();
   }
+
+  // character info and image skeleton are built
   build() {
     const characterTemplate = `
     <div id="character-image-container">
@@ -29,12 +31,14 @@ class Character {
         </div>
 
         <button class="next-btn">
-        Next
+            Next
         </button>
     </div>
     `;
     return characterTemplate;
   }
+
+  // the previous built is rendered
   render() {
     characterContainer.innerHTML = this.build();
   }
