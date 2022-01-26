@@ -1,10 +1,14 @@
-const RICK_API_URL = `https://rickandmortyapi.com/api/character/2`;
+const RICK_API_URL = `https://rickandmortyapi.com/api/character/`;
 
 class API {
-  getCharacter() {
-    fetch(RICK_API_URL)
-      .then((response) => response.json())
-      .then((data) => console.log(data));
+  async getCharacter(idCharacter) {
+    const response = await fetch(
+      `https://rickandmortyapi.com/api/character/${idCharacter}`
+    );
+    // parsing response to json
+    const data = await response.json();
+    //this is an async method so it returns a promise
+    return data;
   }
 }
 
