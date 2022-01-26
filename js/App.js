@@ -2,11 +2,12 @@ import { API, RICK_API_URL } from "./Api.js";
 import { Character } from "./Character.js";
 
 const api = new API();
-const char = new Character();
-char.render(3, 5);
+let currentCaracter = 1;
 
 async function init(initId) {
-  const character = await api.getCharacter(initId);
+  const characterData = await api.getCharacter(initId);
+  const char = new Character(characterData);
+  return char;
 }
 
-init(3);
+init(currentCaracter);

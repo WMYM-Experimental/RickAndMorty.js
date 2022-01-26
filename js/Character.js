@@ -1,8 +1,13 @@
 const characterContainer = document.getElementById("character-container");
 class Character {
-  constructor(image, name) {
+  // use destructuring
+  constructor({ image, name, status, gender, species }) {
     this.image = image;
     this.name = name;
+    this.status = status;
+    this.gender = gender;
+    this.species = species;
+    this.render();
   }
   build() {
     const characterTemplate = `
@@ -18,7 +23,14 @@ class Character {
         </div>
 
         <div id="character-about" class="character-about">
+            <h3 class="character-fact"> Status: ${this.status}</h3>
+            <h3 class="character-fact"> Gender: ${this.gender}</h3>
+            <h3 class="character-fact"> Spicie: ${this.species}</h3>
         </div>
+
+        <button class="next-btn">
+        Next
+        </button>
     </div>
     `;
     return characterTemplate;
