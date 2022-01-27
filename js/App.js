@@ -11,7 +11,7 @@ function validStep(currentCharacterId) {
   if (currentCharacterId == 1) {
     previousBtn.style.display = "none";
   } else {
-    previousBtn.style.display = "inline-block";
+    previousBtn.style.display = "flex";
   }
 }
 
