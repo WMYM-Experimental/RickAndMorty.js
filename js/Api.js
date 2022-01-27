@@ -14,21 +14,3 @@ class Api {
 }
 
 export { Api };
-
-function fizzbuzz(num) {
-  if (num % 3 == 0 && num % 5 == 0) {
-    console.log("FizzBuzz");
-  } else if (num % 3 == 0) {
-    console.log("Fizz");
-  } else if (num % 5 == 0) {
-    console.log("Buzz");
-  }
-}
-
-function show(num) {
-  for (let i = 0; i <= num; i++) {
-    fizzbuzz(i);
-  }
-}
-
-show(5);
