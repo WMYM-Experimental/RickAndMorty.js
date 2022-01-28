@@ -1,6 +1,6 @@
-<svg>
+<svg id="goo">
     <defs>
-        <filter id='goo'>
+        <filter id="goo">
             <feGaussianBlur in='SourceGraphic' stdDeviation='10' result='name' />
             <feColorMatrix in='name' mode='matrix' values='
                     1 0 0 0 0

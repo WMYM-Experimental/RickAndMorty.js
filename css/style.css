@@ -114,7 +114,7 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  filter: url("./filters.svg#goo");
+  filter: url("filters.svg#goo");
 }
 .blurred::before {
   content: "";
@@ -167,6 +167,24 @@ body {
   height: 25px;
   top: 40px;
   left: -20px;
+}
+.go-prev:hover .blurred::after {
+  width: 15px;
+  height: 15px;
+  top: 30px;
+  left: -10px;
+}
+.go-prev:hover .blurred > span:nth-of-type(1) {
+  width: 30px;
+  height: 30px;
+  top: -15px;
+  left: 35px;
+}
+.go-prev:hover > .blurred > span:nth-of-type(2) {
+  width: 25px;
+  height: 25px;
+  top: 40px;
+  left: 45px;
 }
 /* ---------------------------FOOTER--------------------------- */
 .contact {
