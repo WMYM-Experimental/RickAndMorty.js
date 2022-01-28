@@ -8,7 +8,6 @@ class Character {
     this.species = species;
     this.location = location;
     this.render();
-    this.createSpans();
   }
 
   // character info and image skeleton are built
@@ -42,6 +41,7 @@ class Character {
     characterContainer.innerHTML = this.build();
   }
 
+  /*
   async createSpans() {
     const txtSpans = Array.from(document.getElementsByClassName("txtspans"));
     txtSpans.forEach((txtSpan) => {
@@ -55,6 +55,7 @@ class Character {
       }
     });
   }
+  */
 }
 
 export { Character };
