@@ -1,5 +1,3 @@
-const characterContainer = document.getElementById("character-container");
-
 class Character {
   // use destructuring for take the params from the json
   constructor({ image, name, status, gender, species, location }) {
@@ -40,16 +38,22 @@ class Character {
 
   // the previous built is rendered
   render() {
+    const characterContainer = document.getElementById("character-container");
     characterContainer.innerHTML = this.build();
   }
 
   async createSpans() {
-    const txt = document.getElementById("txtspans");
-    txt.innerHTML = await null; // not efficient
-    for (let i = 0; i <= 100; i++) {
-      txt.appendChild(document.createElement("span"));
-      txt.lastChild.innerHTML = this.name;
-    }
+    const txtSpans = Array.from(document.getElementsByClassName("txtspans"));
+    txtSpans.forEach((txtSpan) => {
+      txtSpan.innerHTML = null;
+    });
+
+    txtSpans.forEach((txtSpan) => {
+      for (let i = 0; i <= 3; i++) {
+        txtSpan.appendChild(document.createElement("span"));
+        txtSpan.lastChild.innerHTML = this.name;
+      }
+    });
   }
 }
 
