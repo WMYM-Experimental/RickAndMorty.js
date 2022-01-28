@@ -1,4 +1,5 @@
 const characterContainer = document.getElementById("character-container");
+
 class Character {
   // use destructuring for take the params from the json
   constructor({ image, name, status, gender, species, location }) {
@@ -9,6 +10,7 @@ class Character {
     this.species = species;
     this.location = location;
     this.render();
+    this.createSpans();
   }
 
   // character info and image skeleton are built
@@ -39,6 +41,15 @@ class Character {
   // the previous built is rendered
   render() {
     characterContainer.innerHTML = this.build();
+  }
+
+  async createSpans() {
+    const txt = document.getElementById("txtspans");
+    txt.innerHTML = await null; // not efficient
+    for (let i = 0; i <= 100; i++) {
+      txt.appendChild(document.createElement("span"));
+      txt.lastChild.innerHTML = this.name;
+    }
   }
 }
 
