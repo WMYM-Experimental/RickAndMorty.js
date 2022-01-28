@@ -23,6 +23,21 @@
 </head>
 
 <body>
+    <!-- filter -->
+    <svg class="invisible">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in='SourceGraphic' stdDeviation='10' result='name' />
+                <feColorMatrix in='name' mode='matrix' values='
+                        1 0 0 0 0
+                        0 1 0 0 0 
+                        0.1 0 1 0 0
+                        0 0 0 30 -15 ' result='aab' />
+                <feBlend in='SourceGraphic' in2='aab' />
+            </filter>
+        </defs>
+    </svg>
+    <!-- RickAndMorty -->
     <div class="container">
         <header class="header">
             <div class="logo-container">
@@ -32,11 +47,12 @@
 
         <div class="main-page">
             <div class="display">
+                <!-- main content -->
                 <article id="character-container">
                 </article>
-
+                <!-- liquid buttons -->
                 <div class="btn-container">
-                    <!-- liquid buttons -->
+                    <!-- prev-->
                     <div id="previous-btn" class="btn go-prev">
                         <span class="material-icons arrow">
                             arrow_back_ios
@@ -45,7 +61,7 @@
                             <span></span><span></span>
                         </div>
                     </div>
-
+                    <!-- next -->
                     <div id="next-btn" class="btn go-next">
                         <span class="material-icons arrow">
                             arrow_forward_ios
@@ -54,10 +70,10 @@
                             <span></span><span></span>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
+
         <footer class="contact">
             <a href="https://github.com/WashingtonYandun/RickAndMorty.js"><span>WMYM</span> WashingtonYandun</a>
         </footer>

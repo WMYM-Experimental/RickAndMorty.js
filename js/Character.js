@@ -26,10 +26,10 @@ class Character {
         </div>
 
         <div id="character-about" class="character-about">
-            <h3 class="character-fact"> Status: ${this.status}</h3>
-            <h3 class="character-fact"> Location: ${this.location.name}</h3>
-            <h3 class="character-fact"> Gender: ${this.gender}</h3>
-            <h3 class="character-fact"> Spicie: ${this.species}</h3>
+            <h3 class="character-fact"> Status: <span>${this.status}</span></h3>
+            <h3 class="character-fact"> Location: <span>${this.location.name}</span></h3>
+            <h3 class="character-fact"> Gender: <span>${this.gender}</span></h3>
+            <h3 class="character-fact"> Spicie: <span>${this.species}</span></h3>
         </div>
     </div>
     `;
