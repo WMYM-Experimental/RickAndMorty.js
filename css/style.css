@@ -29,6 +29,7 @@ body {
   height: 100px;
   background-color: #060907;
   display: flex;
+  border-bottom: 2px #f1f1f1 solid;
 }
 .header .logo-container {
   width: 100%;
@@ -88,7 +89,7 @@ body {
   font-size: 2em;
 }
 .name {
-  -webkit-text-stroke: 1px #f1f1f1;
+  -webkit-text-stroke: 2px #f1f1f1;
   color: transparent;
 }
 #character-about {
@@ -217,6 +218,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 2px #f1f1f1 solid;
 }
 .contact a span {
   color: #9fcb41;
