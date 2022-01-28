@@ -9,15 +9,16 @@
 body {
   overflow-y: scroll;
   overflow-x: hidden;
-  background-color: #313131;
+  background-color: #060907;
 }
 .container {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #139b42;
-  background-color: #9fcb41;
-  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/img/portal.svg");
+  background-size: cover;
 }
 .invisible {
   display: none;
@@ -146,7 +147,7 @@ body {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  background-color: #9fcb41;
+  background-color: #047a85;
   border-radius: 100%;
   transition: 1.5s cubic-bezier(0, 2, 0.61, -0.05);
 }
@@ -157,7 +158,7 @@ body {
   height: 70px;
   top: 0;
   left: 0;
-  background-color: #9fcb41;
+  background-color: #047a85;
   border-radius: 100%;
   transition: 1.2s cubic-bezier(0, 2, 0.61, -0.05);
 }
@@ -168,7 +169,7 @@ body {
   height: 70px;
   top: 0;
   left: 0;
-  background-color: #9fcb41;
+  background-color: #047a85;
   border-radius: 100%;
   transition: 1.5s cubic-bezier(0, 2, 0.61, -0.05);
 }
@@ -221,46 +222,7 @@ body {
   color: #9fcb41;
   font-weight: 700;
 }
-
-/* background */
-/* section {
-  margin-top: 100px;
-  z-index: -100;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: calc(100% - 100px);
-  overflow: hidden;
-  background-color: #313131;
-}
-.txt {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  transform: skewY(-345deg) translateY(-300px) translateX(30px);
-  display: flex;
-  flex-wrap: wrap;
-}
-.txt h6 {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  font-size: 10rem;
-  pointer-events: none;
-  letter-spacing: 80px;
-}
-.txt h6 span {
-  color: #139b42;
-  padding: 0 30px;
-  letter-spacing: 80px;
-}
-.txt h6 span:nth-child(even) {
-  color: #139b42;
-  -webkit-text-stroke: 5px #9fcb41;
-  color: #047a85;
-} */
-
+/* ---------------------------RESPONSIVE--------------------------- */
 @media (max-width: 600px) {
   #character-info-container {
     width: 100%;

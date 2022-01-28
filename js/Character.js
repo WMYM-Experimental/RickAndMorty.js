@@ -49,7 +49,7 @@ class Character {
     });
 
     txtSpans.forEach((txtSpan) => {
-      for (let i = 0; i <= 3; i++) {
+      for (let i = 0; i <= 10; i++) {
         txtSpan.appendChild(document.createElement("span"));
         txtSpan.lastChild.innerHTML = this.name;
       }
