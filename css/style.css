@@ -20,6 +20,9 @@ body {
   background-image: url("../img/portal.svg");
   background-size: cover;
 }
+img {
+  cursor: pointer;
+}
 .invisible {
   display: none;
 }
