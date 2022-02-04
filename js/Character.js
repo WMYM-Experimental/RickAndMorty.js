@@ -40,22 +40,6 @@ class Character {
     const characterContainer = document.getElementById("character-container");
     characterContainer.innerHTML = this.build();
   }
-
-  /*
-  async createSpans() {
-    const txtSpans = Array.from(document.getElementsByClassName("txtspans"));
-    txtSpans.forEach((txtSpan) => {
-      txtSpan.innerHTML = null;
-    });
-
-    txtSpans.forEach((txtSpan) => {
-      for (let i = 0; i <= 10; i++) {
-        txtSpan.appendChild(document.createElement("span"));
-        txtSpan.lastChild.innerHTML = this.name;
-      }
-    });
-  }
-  */
 }
 
 export { Character };
